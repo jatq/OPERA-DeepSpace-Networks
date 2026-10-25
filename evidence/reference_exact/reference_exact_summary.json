@@ -1,0 +1,116 @@
+{
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.7"
+  },
+  "proposed_method": "OPTIONCASTCAPExact",
+  "row_count": 31,
+  "rows_sha256": "90f8b9b83fa43ca750a93a374855cbc78ad2995789faafb47c63cf1c0d4cc6d3",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "statistical_unit": "seed/scenario; worlds and observations remain clustered",
+  "study": "31-seed exact reference comparison",
+  "summary_by_baseline": {
+    "CAPThenForecastOption": {
+      "mean_95pct_bootstrap_ci_pp": [
+        4.61116032079717,
+        7.831740006558194
+      ],
+      "mean_gain_pp": 6.171750767348645,
+      "median_gain_pp": 4.6602724188200035,
+      "seed_count": 31,
+      "wins_ties_losses": [
+        28,
+        3,
+        0
+      ]
+    },
+    "CommitPortfolioDynamicExact": {
+      "mean_95pct_bootstrap_ci_pp": [
+        7.449839988818412,
+        12.245486523198315
+      ],
+      "mean_gain_pp": 9.828729582944245,
+      "median_gain_pp": 9.944442445938785,
+      "seed_count": 31,
+      "wins_ties_losses": [
+        31,
+        0,
+        0
+      ]
+    },
+    "ForecastOptionThenCAP": {
+      "mean_95pct_bootstrap_ci_pp": [
+        0.21636624206452462,
+        0.6481039016412503
+      ],
+      "mean_gain_pp": 0.4099453101829865,
+      "median_gain_pp": 0.1918361427520061,
+      "seed_count": 31,
+      "wins_ties_losses": [
+        28,
+        3,
+        0
+      ]
+    },
+    "OptionStaticExact": {
+      "mean_95pct_bootstrap_ci_pp": [
+        0.2455960563492217,
+        0.6410547967682083
+      ],
+      "mean_gain_pp": 0.41628692541616114,
+      "median_gain_pp": 0.22506458680349795,
+      "seed_count": 31,
+      "wins_ties_losses": [
+        28,
+        3,
+        0
+      ]
+    },
+    "PreboundGrantOption": {
+      "mean_95pct_bootstrap_ci_pp": [
+        0.5338897009674474,
+        1.5260312654217536
+      ],
+      "mean_gain_pp": 1.0045857928322197,
+      "median_gain_pp": 0.1435871491228129,
+      "seed_count": 31,
+      "wins_ties_losses": [
+        19,
+        12,
+        0
+      ]
+    }
+  }
+}

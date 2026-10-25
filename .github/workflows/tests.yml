@@ -1,0 +1,41 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: requirements-server.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-server.txt
+
+      - name: Run tests
+        env:
+          PYTHONPATH: experiments
+        run: |
+          python -m pytest -q \
+            experiments/q2_strengthening/test_e1_pricing.py \
+            experiments/q2_strengthening/test_e1_run.py \
+            experiments/q2_strengthening/test_e2_two_stage_scaling.py \
+            experiments/experimental/test_run_v10_10_lns2_audit.py \
+            experiments/experimental/test_equal_budget_benchmark.py
