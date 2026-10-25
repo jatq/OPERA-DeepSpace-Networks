@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite the repository and the accompanying manuscript."
 title: "OPERA: Option-Based Planning and Execution with Recourse and Commit-Gated Authorization"
 type: software
-version: 1.0.0
+version: 1.0.1
 date-released: 2026-10-25
 license: MIT
 repository-code: "https://github.com/jatq/OPERA-DeepSpace-Networks"
